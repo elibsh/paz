@@ -2,6 +2,7 @@ body {
     margin: 0;
     direction: rtl;
     text-align: right;/**/
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -16,8 +17,31 @@ header > div {
     /* background-color: salmon; */
 }
 
-#search-text-box {
+#search-component {
+    /* background-color: seagreen; */
     float: left;
-    width: 152px;
+    /* justify-content: flex-end; */
     margin-top: 20px;
+    display: flex;
+}
+
+#search-component > a:first-child {
+    color: white;
+    text-decoration: none;
+    margin-top: 3px;
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+#search-component > a:first-child:hover {
+    color: #005CA0;
+    text-decoration: underline;
+}
+
+#search-text-box {
+    width: 126px;
+    border: none;
+    padding: 0;
+    display: inline;
 }
