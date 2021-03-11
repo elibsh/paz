@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    direction: rtl;
+    text-align: right;/**/
+}
+
+header {
+    height: 105px;/**/
+    /* background-color: gray; */
+    background-color: rgb(144, 144, 144);
+}
+
+header > div {
+    width: 900px;
+    margin: auto;
+    /* background-color: salmon; */
+}
+
+#search-text-box {
+    float: left;
+    width: 152px;
+    margin-top: 20px;
+}
