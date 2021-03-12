@@ -15,7 +15,7 @@ header {
     background-color: rgb(144, 144, 144);
 }
 
-header > div:first-child {
+header > div:first-child, .flex-container {
     width: 900px;
     margin: auto;
     /* background-color: salmon; */
@@ -60,7 +60,7 @@ nav > ul {
     list-style: none;
     padding-right: 0;
     position: relative;
-    margin-right: 70px;
+    margin-right: 110px;
 }
 
 li {
@@ -68,8 +68,8 @@ li {
 }
 
 li:first-child {
-    top: -50px;
-    right: -130px;
+    top: -35px;
+    right: -150px;
     position: absolute;
     /* background-color: teal; */
 }
@@ -125,4 +125,19 @@ nav a {
     background-image: linear-gradient(rgb(144, 144, 144), rgb(185, 185, 185));
     /* background-image: linear-gradient(rgb(144, 144, 144), gray); */
     height: 15px;
+}
+
+main {
+    margin-top: 30px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-item {
+    border: solid;
+    /* flex: 1; */
+    flex-basis: 31.5%;
 }
