@@ -6,12 +6,16 @@ body {
 }
 
 header {
-    height: 105px;/**/
+    height: 90px;/**/
     /* background-color: gray; */
     background-color: rgb(144, 144, 144);
 }
 
-header > div {
+.dropdown-content {
+    background-color: rgb(144, 144, 144);
+}
+
+header > div:first-child {
     width: 900px;
     margin: auto;
     /* background-color: salmon; */
@@ -19,9 +23,9 @@ header > div {
 
 #search-component {
     /* background-color: seagreen; */
-    float: left;
-    /* justify-content: flex-end; */
-    margin-top: 20px;
+    /* float: left; */
+    justify-content: flex-end;
+    padding-top: 20px;
     display: flex;
 }
 
@@ -34,7 +38,7 @@ header > div {
     font-size: 12px;
 }
 
-#search-component > a:first-child:hover {
+#search-component > a:first-child:hover, nav a:hover {
     color: #005CA0;
     text-decoration: underline;
 }
@@ -44,4 +48,77 @@ header > div {
     border: none;
     padding: 0;
     display: inline;
+}
+
+nav {
+    /* padding-top: 50px; */
+    margin-top: 30px;
+}
+
+nav > ul {
+    display: flex;
+    list-style: none;
+    padding-right: 0;
+    position: relative;
+    margin-right: 70px;
+}
+
+li {
+    margin: 10px;
+}
+
+li:first-child {
+    top: -50px;
+    right: -130px;
+    position: absolute;
+    /* background-color: teal; */
+}
+
+nav a {
+    /* padding: 10px; */
+    color: white;
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* li::after {
+    content: "<li><img src=\"menu_sep.png\" alt=\"Menu Seperator\"></li>";
+} */
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: max-content;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.dropdown:hover > .dropdown-content {
+    display: block;
+}
+
+.dropdown-content > a {
+    padding: 5px;
+}
+
+.dropdown-content > img {
+    width: 5px;
+    /* height: 5px; */
+}
+
+.dropdown-content > a:hover {
+    background-color: #bcbcbc;
+}
+
+/* header > div:last-child { */
+#fading-background {
+    /* background-image: linear-gradient(rgb(144, 144, 144), lightgray); */
+    background-image: linear-gradient(rgb(144, 144, 144), rgb(185, 185, 185));
+    /* background-image: linear-gradient(rgb(144, 144, 144), gray); */
+    height: 15px;
 }
