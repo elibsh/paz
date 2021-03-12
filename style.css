@@ -52,7 +52,7 @@ header > div:first-child {
 
 nav {
     /* padding-top: 50px; */
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 nav > ul {
@@ -81,6 +81,7 @@ nav a {
     text-decoration: none;
     font-weight: bold;
     font-size: 14px;
+    padding-bottom: 20px;
 }
 
 /* li::after {
@@ -96,6 +97,9 @@ nav a {
     position: absolute;
     width: max-content;
     box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    /* top: 35px; */
+    /* padding-top: 20px; */
+    /* border-top: transparent; */
 }
 
 .dropdown:hover > .dropdown-content {
