@@ -38,7 +38,7 @@ header > div:first-child, .flex-container {
     font-size: 12px;
 }
 
-#search-component > a:first-child:hover, nav a:hover, footer a:hover, footer li:last-child a:hover {
+#search-component > a:first-child:hover, header nav a:hover, footer a:hover, footer li:last-child a:hover {
     color: #005CA0;
     text-decoration: underline;
 }
@@ -50,12 +50,12 @@ header > div:first-child, .flex-container {
     display: inline;
 }
 
-nav {
+header nav {
     /* padding-top: 50px; */
     margin-top: 20px;
 }
 
-nav > ul {
+header nav > ul {
     display: flex;
     list-style: none;
     padding-right: 0;
@@ -63,18 +63,18 @@ nav > ul {
     margin-right: 110px;
 }
 
-nav > ul > li {
+header nav > ul > li {
     margin: 10px;
 }
 
-nav > ul > li:first-child {
+header nav > ul > li:first-child {
     top: -35px;
     right: -150px;
     position: absolute;
     /* background-color: teal; */
 }
 
-nav a {
+header nav a {
     /* padding: 10px; */
     color: white;
     display: block;
@@ -153,7 +153,7 @@ main {
     position: relative;
 }
 
-p {
+.text-over-image p {
     font-size: 13px;
     margin-top: 2px;
     margin-bottom: 2px;
@@ -306,5 +306,148 @@ footer a {
     font-size: 14px;
     color: white;
     text-decoration: none;
-    outline: none;
+}
+
+.flex-item-contact {
+    /* border: solid; */
+}
+
+.flex-item-contact:first-child {
+    flex-basis: 10%;
+}
+
+.flex-item-contact:last-child {
+    flex-basis: 84%;
+}
+
+.flex-item-contact:first-child > nav > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* background-image: url(images\sidebar_menu.png); */
+}
+
+.flex-item-contact:first-child > nav > ul > li {
+    position: relative;
+}
+
+.flex-item-contact:first-child > nav > ul > li > a {
+    font-size: 13px;
+    color: #5C5C5C;
+    position: absolute;
+    top: 7px;
+    right: 15px;
+}
+
+.flex-item-contact:last-child {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-item-contact:last-child > #first-row-contact {
+    /* background-color: blue; */
+    flex-basis: 25%;
+    font-size: 12px;
+    color: #5C5C5C;
+    /* border: solid; */
+}
+
+.flex-item-contact:last-child > #first-row-contact > a {
+    color: #5C5C5C;
+    text-decoration: none;
+}
+
+.flex-item-contact:last-child > #first-row-contact > a:hover {
+    color: #005CA0;
+    text-decoration: underline;
+}
+
+.flex-item-contact:last-child > #second-row-contact > h3 {
+    color: #72716D;
+    font-size: 15px;
+    font-weight: bold;
+    border-bottom: 1px solid #CBCBCB;
+    width: 440px;
+}
+
+#third-row-contact {
+    display: flex;
+    /* flex-direction: column; */
+}
+
+#third-row-contact > div:first-child {
+    /* flex-basis: 55%; */
+    width: 390px;
+    /* background-color: yellow; */
+    background-image: linear-gradient(white, rgb(236, 236, 236));
+    border: 1px solid #CBCBCB;
+    border-bottom: none;
+    border-top-right-radius: 25px;
+}
+
+#third-row-contact > div:first-child > div {
+    margin-right: 10px;
+}
+
+/* #third-row-contact > div:first-child > div > div {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+} */
+
+#third-row-contact h2 {
+    color: #005CA0;
+    font-size: 15px;
+    font-weight: bold;
+    /* margin-bottom: 0; */
+}
+
+#third-row-contact p {
+    font-size: 13px;
+    font-weight: bold;
+    color: #6D6D6D;
+    /* margin-top: 0; */
+}
+
+#third-row-contact span {
+    color: #72716D;
+    font-size: 12px;
+}
+
+form {
+    width: 235px;
+    margin-top: 5px;
+    margin-right: 50px;
+}
+
+form > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+form label {
+    color: #6D6D6D;
+    font-size: 12px;
+}
+
+form input {
+    width: 160px;
+    padding: 3px;
+    display: inline-block;
+    border: 1px solid #808992;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+form > textarea {
+    /* width: 235px; */
+    width: 100%;
+    color: #6D6D6D;
+    padding: 3px;
+    height: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #808992;
+    font-size: 12px;
 }
