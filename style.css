@@ -38,7 +38,7 @@ header > div:first-child, .flex-container {
     font-size: 12px;
 }
 
-#search-component > a:first-child:hover, nav a:hover {
+#search-component > a:first-child:hover, nav a:hover, footer a:hover, footer li:last-child a:hover {
     color: #005CA0;
     text-decoration: underline;
 }
@@ -128,8 +128,17 @@ nav a {
     height: 15px;
 }
 
+#fading-background2 {
+    /* background-image: linear-gradient(rgb(144, 144, 144), lightgray); */
+    /* background-image: linear-gradient(rgb(144, 144, 144), rgb(185, 185, 185)); */
+    /* background-image: linear-gradient(rgb(144, 144, 144), gray); */
+    background-image: linear-gradient(rgb(203, 203, 203), rgb(144, 144, 144));
+    height: 13px;
+}
+
 main {
     margin-top: 30px;
+    margin-bottom: 90px;
 }
 
 .flex-container {
@@ -184,7 +193,7 @@ p {
     color: rgb(114, 113, 109);
 }
 
-.read-more > a:hover, .more-details > a:hover, #branches > a:hover {
+.read-more > a:hover, .more-details > a:hover, #branches a:hover {
     color: #005CA0;
 }
 
@@ -265,4 +274,37 @@ main > .flex-container:last-child > .flex-item:last-child > div > img {
 
 #branches li {
     margin-bottom: 4px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    /* background-image: linear-gradient(rgb(203, 203, 203), rgb(144, 144, 144)); */
+    background-color: rgb(144, 144, 144);
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    margin-bottom: 3px;
+    margin-top: 0;
+}
+
+footer li:nth-child(even) {
+    color: white;
+    margin-left: 4px;
+    margin-right: 4px;
+    /* color: red; */
+}
+
+footer li:last-child a {
+    color: red;
+}
+
+footer a {
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    outline: none;
 }
