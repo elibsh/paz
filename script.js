@@ -49,4 +49,4 @@ function changeImage() {
     myImage.src = "images\\" + images[i++ % 4];
 }
 
-setInterval(changeImage, 2500);
+setInterval(changeImage, 5000);
