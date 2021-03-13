@@ -63,11 +63,11 @@ nav > ul {
     margin-right: 110px;
 }
 
-li {
+nav > ul > li {
     margin: 10px;
 }
 
-li:first-child {
+nav > ul > li:first-child {
     top: -35px;
     right: -150px;
     position: absolute;
@@ -97,6 +97,7 @@ nav a {
     position: absolute;
     width: max-content;
     box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    z-index: 1;
     /* top: 35px; */
     /* padding-top: 20px; */
     /* border-top: transparent; */
@@ -169,7 +170,7 @@ p {
     margin-right: 10px;
 }
 
-.read-more {
+.read-more, .more-details {
     float: left;
 }
 
@@ -178,15 +179,90 @@ p {
     font-size: 13px;
 }
 
-.read-more > a:hover {
-    color: #005CA0;
-    content: bla;
+.more-details > a, #branches a {
+    font-size: 13px;
+    color: rgb(114, 113, 109);
 }
 
-.read-more > a > img {
+.read-more > a:hover, .more-details > a:hover, #branches > a:hover {
+    color: #005CA0;
+}
+
+.read-more > a > img, .more-details > a > img {
+    margin-top: 20px;
     margin-right: 5px;
+}
+
+#branches img {
+    margin-right: 5px;
+}
+
+.more-details {
+    margin-bottom: 20px;
 }
 
 /* .read-more img {
     content: url("images\menu_home_blue.png");
 } */
+
+main > div:last-child {
+    margin-top: 18px;
+}
+
+/* main > .flex-container:first-child > .flex-item { */
+    main > .flex-container:first-child > .flex-item > img, .text-over-image {
+    border-bottom-right-radius: 25px;
+}
+
+main > .flex-container:last-child > .flex-item {
+    color: #575757;
+    /* border: solid; */
+    /* border: groove thin; */
+    border: 2px solid rgb(236, 236, 236);
+    border-top-right-radius: 25px;
+    /* border-width: 5px; */
+    /* border-color: rgb(236, 236, 236); */
+    background-image: linear-gradient(white, rgb(236, 236, 236));
+    /* font-weight: bold; */
+}
+
+main > .flex-container:last-child > .flex-item > div {
+    /* background-color: violet; */
+    width: 244px;
+    margin: auto;
+}
+
+main > .flex-container:last-child > .flex-item > div > h3 {
+    font-size: 14px;
+    margin-top: 7px;
+    /* text-align: center; */
+}
+
+main > .flex-container:last-child > .flex-item > div > h3:first-child {
+    margin-bottom: 0;
+}
+
+main > .flex-container:last-child > .flex-item > div > h3:nth-child(2) {
+    margin-top: 0;
+    color: rgb(236, 236, 236);
+    font-weight: bolder;
+    /* background-color: royalblue; */
+}
+
+main > .flex-container:last-child > .flex-item:last-child > div > img {
+    float: left;
+}
+
+#branches {
+    float: right;
+}
+
+#branches ul {
+    padding: 0;
+    list-style: none;
+    /* display: block; */
+}
+
+#branches li {
+    margin-bottom: 4px;
+}
