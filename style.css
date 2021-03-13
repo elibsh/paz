@@ -492,6 +492,12 @@ form > textarea {
     font-size: 12px;
 }
 
+form > a > img {
+    float: left;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
 #third-row-contact div {
     /* border: solid;
     background-color: red; */
